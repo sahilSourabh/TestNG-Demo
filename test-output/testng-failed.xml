@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Car Loan(failed)">
+    <classes>
+      <class name="test.Demo4">
+        <methods>
+          <include name="beforesuite"/>
+          <include name="WebCarLoan"/>
+          <include name="postrequisites"/>
+        </methods>
+      </class> <!-- test.Demo4 -->
+      <class name="test.Demo1">
+        <methods>
+          <include name="afterclass"/>
+          <include name="beforeclass"/>
+          <include name="demo1"/>
+          <include name="parameterdemo"/>
+          <include name="Demo"/>
+          <include name="prerequisitess"/>
+        </methods>
+      </class> <!-- test.Demo1 -->
+    </classes>
+  </test> <!-- Car Loan(failed) -->
+  <test thread-count="5" name="Personal Loan(failed)">
+    <classes>
+      <class name="test.Demo3">
+        <methods>
+          <include name="prerequisites"/>
+          <include name="APIhomeLoan"/>
+          <include name="WebhomeLoan"/>
+        </methods>
+      </class> <!-- test.Demo3 -->
+      <class name="test.Demo2">
+        <methods>
+          <include name="aftermethod"/>
+          <include name="beforemethod"/>
+          <include name="postrequisite"/>
+          <include name="aftersuite"/>
+          <include name="testdemo1"/>
+        </methods>
+      </class> <!-- test.Demo2 -->
+    </classes>
+  </test> <!-- Personal Loan(failed) -->
+</suite> <!-- Failed suite [Suite] -->

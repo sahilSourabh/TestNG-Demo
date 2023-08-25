@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="5">    <!-- Runnings Tests Parallely at test level -->
+	
+	<listeners>
+		<listener class-name="test.Listener" />   <!-- Implementing listeners -->
+	</listeners>
+  
+  <test name="Loan Department" parallel="classes" thread-count="2"> <!-- Runnings Tests Parallely at class level -->
+  	<groups>
+  		<run>
+  			<include name="Smoke"/>    <!-- Executing particular TCs among all TCs -->
+  		</run>
+  	</groups>
+    <classes>
+      <class name='test.Demo2'/>
+      <class name="test.Demo3"/>
+      <class name="test.Demo1"/>
+      <class name="test.Demo4"/>
+      	
+    </classes>
+  </test> <!-- Test -->
+  
+  
+  
+  
+</suite> <!-- Suite -->
